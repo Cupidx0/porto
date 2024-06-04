@@ -1,0 +1,255 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #657195;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+
+html,body{ 
+	width:100%;
+	height:100%;
+	background:#000;
+}
+
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body{
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background:black;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  width: 100vw;
+  height: 100vh;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color:black;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position:fixed;
+  overflow-y: scroll;
+}
+.con{
+  width: 100%;
+  height: 100%;
+  font-size: large;
+  position:absolute;
+  display: flex;
+  color:white;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position:fixed;
+  overflow-y: scroll;
+}
+#head{
+  width: 100vw;
+  height: 100vh;
+}
+header{
+  font-family: "Rubik Broken Fax", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  background-color:rgba(21, 20, 20, 0.199);
+  color: #dddddde7;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  &h1{
+      letter-spacing: 5px;
+      justify-content: space-between;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+}
+nav{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10%;
+}
+ul {
+  display: flex;
+  gap:20px;
+  justify-content: space-between;
+  margin: 10px;
+  list-style: none;
+  transition:cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transform: rotate3d(x,y,150deg);
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#main,
+#skills,
+#project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1%;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+* {box-sizing: border-box}
+
+.skills-list {
+  width: 60vw;
+}
+#boutme{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100vw;
+height: 100vh;
+ h1{
+  color: #2196F3;
+ }
+}
+
+
+
+.container {
+width: 100%;
+background-color: #ddd;
+padding: 2px;
+border-radius: 7px;
+border: #808080;
+}
+
+#skills {
+text-align: right;
+padding-top: 10px;
+padding-bottom: 10px;
+padding: 2px;
+color: white;
+border-radius: 20px;
+}
+.logo{
+  margin-top: 60px;
+  width: 100%;
+  background-color: #dddddd44;
+  padding: 2px;
+  border-radius: 7px;
+  border: #808080;
+}
+
+.html {width: 40%; background-color: #2d9abb;}
+.css {width: 30%; background-color: #2196F3;}
+.js {width: 10%; background-color: #6536f4;}
+.python {width: 50%; background-color: #380f33;}
+#project{
+  width: 100vw;
+  height: 100vh;
+} 
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  transition:cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transform: rotate3d(x,y,150deg);
+  font-size: large;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
